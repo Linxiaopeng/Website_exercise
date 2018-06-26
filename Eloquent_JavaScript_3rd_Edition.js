@@ -18,7 +18,7 @@ for (var number = 1; number < 101; number++) {
     if (number % 3 == 0) output += "Fizz";
     if (number % 5 == 0) output += "Bizz";
     console.log(output || number);
-};
+}
 
 // 2.3 Chessboard
 
