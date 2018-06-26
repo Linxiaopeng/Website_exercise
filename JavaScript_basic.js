@@ -7,3 +7,8 @@ JavaScript basic [130 exercises with solution]
 // Sample Output: Today is: Tuesday.
 // Current time is: 10 PM: 30 : 38
 
+var today = new Date();
+var day = today.getDay();
+var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+console.log("Today is:" + daylist[day] + ".");
+
