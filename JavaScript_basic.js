@@ -16,3 +16,6 @@ var hour = today.getHours();
 var minute = today.getMinutes();
 var second = today.getMinutes();
 console.log("Current Time: " + hour + ": " + minute + ": " + second);
+
+// 2. Write a JavaScript program to print the contents of the current window.  Go to the editor
+// Click me to see the solution
