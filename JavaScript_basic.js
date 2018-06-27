@@ -64,10 +64,8 @@ function animate_string(id) {
     }, 100);
 }
 
-/*
-reference:
-https://stackoverflow.com/questions/958908/how-do-you-reverse-a-string-in-place-in-javascript
-*/
+// reference:
+// https://stackoverflow.com/questions/958908/how-do-you-reverse-a-string-in-place-in-javascript
 
 function reverseString(str) {
     var newString = '';
@@ -78,3 +76,29 @@ function reverseString(str) {
 }
 
 console.log(reverseString("REVERSESTRING"));
+
+// 6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar. 
+
+// solution 1
+function leapYear(year) {
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                year = "Leap Year";
+            } else year = "Not a Leap Year";
+        } else year = "Leap Year";
+    } else year = "Not a Leap Year";
+    return year;
+}
+
+console.log(leapYear("1997"));
+
+// solution 2
+function leapYear(year) {
+    if (x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0)) {
+        year = "Leap Year";
+    } else year = "Not a Leap Year";
+    return year;
+}
+
+console.log(leapYear("1997"));
