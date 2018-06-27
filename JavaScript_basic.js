@@ -122,7 +122,7 @@ januarySunday(2014, 2050);
 // 8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".
 
 function randomNumber(i) {
-    var random = Math.floor(Math.random() * 11);
+    var random = Math.ceil(Math.random() * 11);
     if (i == random) {
         console.log("Good Work!")
     } else console.log("Not matched. " + "The correct answer is " + random + ".")
@@ -130,5 +130,38 @@ function randomNumber(i) {
 
 randomNumber(2);
 
+// 9. Write a JavaScript program to calculate days left until next Christmas.
 
+// solution 1
 
+function calChristmas() {
+    var today = new Date();
+    var christmas = new Date(today.getFullYear(), 11, 25);
+    if (today.getMonth() == 11 && today.getDate() > 25) {
+        christmas.setFullYear(christmas.getFullYear() + 1);
+    } else console.log(Math.ceil(christmas.getTime() - today.getTime()) / (1000 * 60 * 60 * 24) + " days left untill Christmas!");
+}
+
+calChristmas();
+
+// solution 2
+
+function countDown(t) {
+    var second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+    var now = new Date().getTime();
+    countDown = new Date(t).getTime();
+    if (now < countDown) {
+        distance = countDown - now;
+    } else distance = now - countDown;
+
+    console.log("There are only " + Math.ceil(distance / day) + " Days " +
+        Math.ceil((distance % day) / hour) + " Hours " +
+        Math.ceil((distance % hour) / minute) + " Minutes " +
+        Math.ceil((distance % minute) / second) + " Seconds left until " + t);
+}
+
+countDown('Dec 25, 2018 00:00:00');
