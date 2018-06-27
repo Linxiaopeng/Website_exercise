@@ -102,3 +102,22 @@ function leapYear(year) {
 }
 
 console.log(leapYear("1997"));
+
+// 7. Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050. 
+
+function januarySunday(year1, year2) {
+    for (i = year1; i <= year2; i++) {
+        var january = new Date(i, 0, 1);
+        if (january.getDay() === 0) {
+            console.log("The first day of " + i + " is a Sunday")
+        }
+    }
+}
+
+januarySunday(2014, 2050);
+
+// reference:
+// https://codepen.io/dlusk/pen/MarEvq
+
+// 8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".
+
