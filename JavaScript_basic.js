@@ -64,7 +64,10 @@ function animate_string(id) {
     }, 100);
 }
 
-///
+/*
+reference:
+https://stackoverflow.com/questions/958908/how-do-you-reverse-a-string-in-place-in-javascript
+*/
 
 function reverseString(str) {
     var newString = '';
