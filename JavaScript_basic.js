@@ -165,3 +165,14 @@ function countDown(t) {
 }
 
 countDown('Dec 25, 2018 00:00:00');
+
+// 10. Write a JavaScript program to calculate multiplication and division of two numbers(input from user). 
+
+function calMultiDivid(num1, num2) {
+    multiplyBy = num1 * num2;
+    divideBy = num1 / num2;
+    console.log("Multiplication is " + multiplyBy + ". Division is " + divideBy);
+}
+
+calMultiDivid(128, 8);
+
