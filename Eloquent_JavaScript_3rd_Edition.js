@@ -88,4 +88,4 @@ function countChar(str1, str2) {
     return j;
 }
 
-console.log(countChar("BBBBBC", "C"));
+console.log(countChar("BBC", "C"));
