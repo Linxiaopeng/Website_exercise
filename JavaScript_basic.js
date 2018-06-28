@@ -176,3 +176,19 @@ function calMultiDivid(num1, num2) {
 
 calMultiDivid(128, 8);
 
+// 11. Write a JavaScript program to convert temperatures to and from Celsius, Fahrenheit.
+
+function convertCtoF(t) {
+    cToF = (t / 5) * 9 + 32;
+    console.log(t + "°C is " + cToF + "°F");
+}
+function convertFtoC(t) {
+    fToC = ((t - 32) / 9) * 5;
+    console.log(t + "°F is " + fToC + "°C");
+}
+
+convertCtoF(60);
+convertFtoC(45);
+
+// 12. Write a JavaScript program to get the website URL(loading page). 
+
