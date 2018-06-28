@@ -279,3 +279,114 @@ function checkPorN(n) {
 }
 
 console.log(checkPorN(-8));
+
+// 21. Write a JavaScript program to create a new string adding "Py" in front of a given string.If the given string begins with "Py" then return the original string.
+
+function addPy(str) {
+    if (str === null || str === undefined || str.substring(0, 2) == "Py")
+        return str;
+    else
+        return str = "Py" + str;
+}
+
+console.log(addPy("thon"));
+
+// 22. Write a JavaScript program to remove a character at the specified position of a given string and return the new string.  
+
+function removeStr(num, str) {
+    return str.slice(0, num) + str.slice(++num);
+}
+
+console.log(removeStr(3, "Google"));
+
+// 23. Write a JavaScript program to create a new string from a given string changing the position of first and last characters.The string length must be greater than or equal to 1. 
+
+function removeFandL(str) {
+    first = str.slice(0, 1);
+    last = str.slice(-1);
+
+    if (str.length > 1)
+        return str.replace(last, first).replace(first, last);
+    else
+        return str;
+}
+
+console.log(removeFandL("Google"));
+
+// 24. Write a JavaScript program to create a new string from a given string with the first character of the given string added at the front and back.
+
+function addFandL(str) {
+    first = str.slice(0, 1);
+
+    if (str.length > 1)
+        return first + str + first;
+    else
+        return str;
+}
+
+console.log(addFandL("Google"));
+
+// 25. Write a JavaScript program check if a given positive number is a multiple of 3 or a multiple of 7. 
+
+function check3or7(n) {
+    if (n % 3 == 0 && n % 7 == 0)
+        return n + " is a multiple of 3 and a multiple of 7.";
+    else if (n % 3 == 0)
+        return n + " is a multiple of 3.";
+    else if (n % 7 == 0)
+        return n + " is a multiple of 7.";
+    else
+        return n + " is not either a multiple of 3 or a multiple of 7.";
+}
+
+console.log(check3or7(300));
+
+// 26. Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back.The string length must be 3 or more.
+
+function addBack(str) {
+    back = str.slice(-3);
+
+    if (str.length > 3)
+        return back + str + back;
+    else
+        return str;
+}
+
+console.log(addBack("Google"));
+
+// 27. Write a JavaScript program to check if a string starts with 'Java' and false otherwise.
+
+function checkJava(str) {
+    start = str.slice(0, 4);
+
+    if (start == "Java")
+        return true;
+    else
+        return false;
+}
+
+console.log(checkJava("JavaScript"));
+
+// 28. Write a JavaScript program to check if two given integer values are in the range 50..99(inclusive).Return true if either of them are in the said range.
+
+function check50to99(i, j) {
+    if (50 <= i && i <= 99 || 50 <= j && j <= 99)
+        return true;
+    else
+        return false;
+}
+
+console.log(check50to99(50, 90));
+
+// 30. Write a JavaScript program to check if a string "Script" presents at 5th(index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.
+
+function removeScript(str) {
+    back = str.slice(0, -6);
+
+    if (str.length > 6)
+        return back;
+    else
+        return str;
+}
+
+console.log(removeScript("CoffeeScript"));
