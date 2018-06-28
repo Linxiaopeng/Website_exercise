@@ -192,3 +192,90 @@ convertFtoC(45);
 
 // 12. Write a JavaScript program to get the website URL(loading page). 
 
+alert("The website URL is " + window.location.href);
+
+// 13. Write a JavaScript exercise to create a variable using a user - defined name. 
+
+var var_name = 'abcd';
+var n = 120;
+this[var_name] = n;
+console.log(this[var_name])
+
+// 14. Write a JavaScript exercise to get the extension of a filename. 
+
+function getFilename(n) {
+    n = n.split('.').pop();
+    console.log("The extension of the filename is " + n);
+}
+getFilename("abcd.psd.txt.jpeg");
+
+// 15. Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference. 
+
+function getDifference(n) {
+    if (n > 13) {
+        n = 2 * (n - 13);
+    } else {
+        n = 13 - n;
+    }
+    console.log(n);
+}
+
+getDifference(2018);
+
+// 16. Write a JavaScript program to compute the sum of the two given integers.If the two values are same, then returns triple their sum.
+
+function computeSum(i, j) {
+    var n = '';
+    if (i == j) {
+        n = 3 * (i + j);
+    } else {
+        n = i + j;
+    }
+    console.log(n);
+}
+
+computeSum(12, 12);
+
+// 17. Write a JavaScript program to compute the absolute difference between a specified number and 19. Returns triple their absolute difference if the specified number is greater than 19.
+
+function getDiff(n) {
+    if (n > 19)
+        return 3 * (n - 19);
+    else
+        return 19 - n;
+}
+
+console.log(getDiff(2018));
+
+// 18. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.  
+
+function checkNum(i, j) {
+    if (i == 50 || j == 50 || i + j == 50)
+        return true;
+    else
+        return false;
+}
+
+console.log(checkNum(25, 25));
+
+// 19. Write a JavaScript program to check a given integer is within 20 of 100 or 400. 
+
+function checkNum(n) {
+    return (Math.abs(100 - n) <= 20)
+        || (Math.abs(400 - n) <= 20);
+}
+
+console.log(checkNum(60));
+
+// 20. Write a JavaScript program to check from two given integers, if one is positive and one is negative.
+
+function checkPorN(n) {
+    if (n > 0)
+        return n + " is positive";
+    else if (n < 0)
+        return n + " is negative";
+    else
+        return n + " is Zero";
+}
+
+console.log(checkPorN(-8));
