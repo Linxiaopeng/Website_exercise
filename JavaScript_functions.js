@@ -14,7 +14,7 @@ function reverseNum(num) {
     } return j;
 }
 
-console.log(reverseNum("JavaScript"));
+reverseNum("JavaScript");
 
 // 2. Write a JavaScript function that checks whether a passed string is palindrome or not ?
 
@@ -30,13 +30,13 @@ function checkPal(str) {
     return originalStr == reverseStr ? true : false;
 }
 
-console.log(checkPal("Madam"));
+checkPal("Madam");
 
 // 3. Write a JavaScript function that generates all combinations of a string. 
 
 function generateCom(str) {
-    str = str.split("");
-    var strNew = "";
+    str = str.split('');
+    var strNew = '';
     for (i = 0; i < str.length; i++) {
         strNew = str[i];
         console.log(strNew);
@@ -48,3 +48,38 @@ function generateCom(str) {
 }
 
 generateCom("Google");
+
+// 4. Write a JavaScript function that returns a passed string with letters in alphabetical order.
+
+function alphStr(str) {
+    return str.split('').sort().join('');
+}
+
+alphStr("Google");
+
+// 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+
+function convertStr(str) {
+    strNew = str.toLowerCase().split(" ");
+    for (i = 0; i < strNew.length; i++) {
+        strNew[i] = strNew[i].charAt(0).toUpperCase() + strNew[i].slice(1);
+    }
+    return strNew.join(" ");
+}
+
+convertStr("google map");
+
+// 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
+
+function findLongest(str) {
+    strNew = str.split(" ");
+    j = 0;
+    for (i = 0; i < strNew.length; i++) {
+        if (strNew[i].length > j)
+            j = strNew[i].length;
+            str=strNew[i]
+    }
+    return str;
+}
+
+findLongest("Apple Google Microsoft");
