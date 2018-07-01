@@ -4,8 +4,6 @@ JavaScript functions [29 exercises with solution]
 */
 
 // 1.Write a JavaScript function that reverse a number.
-// Example x = 32243;
-// Expected Output: 34223	
 
 function reverseNum(num) {
     var j = '';
@@ -77,9 +75,125 @@ function findLongest(str) {
     for (i = 0; i < strNew.length; i++) {
         if (strNew[i].length > j)
             j = strNew[i].length;
-            str=strNew[i]
+        str = strNew[i]
     }
     return str;
 }
 
 findLongest("Apple Google Microsoft");
+
+// 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+
+function countVow(str) {
+    vowelList = 'aeiouAEIOU';
+    countVow = 0;
+    for (i = 0; i < str.length; i++) {
+        if (vowelList.indexOf(str[i]) !== -1)
+            countVow++;
+    }
+    return countVow;
+}
+countVow("Google");
+
+// 8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+
+function checkPrime(num) {
+    if (num < 2) {
+        return num + " is not prime."
+    }
+    for (i = 2; i < num; i++) {
+        if (num % i == 0)
+            return num + " is not prime."
+    }
+    return num + " is prime."
+}
+
+checkPrime(21);
+
+// 9. Write a JavaScript function which accepts an argument and returns the type.
+
+function checkValue(value) {
+    return value + " is " + typeof value + ".";
+}
+
+checkValue(12);
+
+// 10. Write a JavaScript function which returns the n rows by n columns identity matrix.
+
+function createMatrix(n) {
+    matrix = new Array(n);
+    for (i = 0; i < n; i++) {
+        matrix[i] = new Array(n).fill(0);
+        matrix[i][i] = 1;
+    }
+    return matrix;
+}
+
+createMatrix(6);
+
+// 11. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.
+
+function findNum(num) {
+    num.sort(function (a, b) { return a - b });
+    return `${num[1]}, ${num[num.length - 2]}`;
+}
+
+findNum([100, 99, 1, 2]);
+
+// 12. Write a JavaScript function which says whether a number is perfect.
+
+function findPerfect(num) {
+    sum = 0;
+    for (i = 0; i < num; i++) {
+        if (num % i === 0) {
+            sum += i;
+        }
+    }
+    if (sum === num)
+        console.log(num + " is a perfect number");
+    else
+        console.log(num + " is not a perfect number");
+}
+
+findPerfect(27);
+
+// 13. Write a JavaScript function to compute the factors of a positive integer.
+
+function computeFac(n) {
+    nFactors = [];
+    for (i = 1; i <= n; i++) {
+        if (n % i === 0) {
+            nFactors.push(i);
+        }
+    }
+    return nFactors;
+}
+
+computeFac(15);
+
+// 14. Write a JavaScript function to convert an amount to coins.
+
+function convertCoins(n, coins) {
+    nNew = [];
+    for (i = 0; i < coins.length; i++) {
+        while (n >= coins[i]) {
+            nNew.push(coins[i]);
+            n = n - coins[i];
+        }
+    }
+    return nNew;
+}
+
+convertCoins(135, [100, 50, 20, 10, 5, 1]);
+
+// 15. Write a JavaScript function to compute the value of bn where n is the exponent and b is the bases. Accept b and n from the user and display the result.
+
+function computeValue(base, exponent) {
+    n = 1;
+    for (i = 0; i < exponent; i++) {
+        n = n * base;
+    }
+    return n;
+}
+
+computeValue(2, 3)
