@@ -197,3 +197,68 @@ function computeValue(base, exponent) {
 }
 
 computeValue(2, 3)
+
+// 16. Write a JavaScript function to extract unique characters from a string.
+
+function extractUnique(str) {
+    strNew = "";
+    str = str.toLowerCase();
+    for (i = 0; i < str.length; i++) {
+        if (strNew.indexOf(str.charAt(i)) == -1) {
+            strNew += str[i];
+        }
+    }
+    return strNew;
+}
+
+extractUnique("Google");
+
+// 17. Write a JavaScript function to  get the number of occurrences of each letter in specified string. 
+
+function numOccurrences(str) {
+    strNew = {};
+    str = str.toLowerCase();
+    str.split("").map(function (i) { strNew[i] = !strNew[i] ? 1 : strNew[i] + 1 });
+    return strNew;
+}
+
+numOccurrences("Google");
+
+// 18. Write a function for searching JavaScript arrays with a binary search.
+
+function binoarySearch(array, i) {
+    array.sort(function (a, b) { return a - b });
+    console.log(array);
+    j = Math.floor(array.length / 2);
+    if (array[j] === i) {
+        return j;
+    } else if (array[j] < i) {
+        array = array.slice(j + 1);
+        res = binoarySearch(array, i);
+        return j + 1 + res;
+    } else {
+        array1 = array.slice(0, j);
+        return binoarySearch(array1, i);
+    }
+}
+binoarySearch([13, 32, 19, 123, 56, 3327, 2, 6731], 50)
+
+function bino(arr, t) {
+    arr.sort(function (a, b) {
+        return a - b;
+    });
+    console.log(arr);
+    var m = Math.floor(arr.length / 2);
+    if (arr[m] === t) {
+        return m;
+    } else if (arr[m] < t) {
+        var arr = arr.slice(m + 1);
+        var res = bino(arr, t);
+        return m + 1 + res;
+    } else {// (arr[m] > t)
+        var arr1 = arr.slice(0, m);
+        return bino(arr1, t);
+    }
+}
+
+console.log(bino([13, 32, 19, 123, 56, 3327, 2, 6731], 56));
