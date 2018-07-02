@@ -226,19 +226,22 @@ numOccurrences("Google");
 
 // 18. Write a function for searching JavaScript arrays with a binary search.
 
-function binoarySearch(array, i) {
-    array.sort(function (a, b) { return a - b });
-    console.log(array);
-    j = Math.floor(array.length / 2);
-    if (array[j] === i) {
-        return j;
-    } else if (array[j] < i) {
-        array = array.slice(j + 1);
-        res = binoarySearch(array, i);
-        return j + 1 + res;
-    } else {
-        array1 = array.slice(0, j);
-        return binoarySearch(array1, i);
+function binoarySearch(arr, t) {
+    arr.sort(function (a, b) { return a - b });
+    var i = 0, j = arr.length, m;
+
+    while (i < j) {
+        m = Math.floor((i + j) / 2);
+        if (t <= arr[m])
+            j = m;
+        else
+            i = m + 1;
     }
+
+    if (arr[i] === t)
+        return i;
+    else
+        return -1;
 }
-binoarySearch([13, 32, 19, 123, 56, 3327, 2, 6731], 50)
+
+binoarySearch([13, 32, 19, 123, 56, 3327, 2, 6731], 56);
