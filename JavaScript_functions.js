@@ -268,4 +268,25 @@ function getRandom(n) {
     }
     return text;
 }
+
 getRandom(13);
+
+// 21. Write a JavaScript function to get all possible subset with a fixed length (for example 2) combinations in an array.
+
+function getSubset(arr, n) {
+    arrNew = [];
+    for (i = 0; i < arr.length; i++) {
+        tempArr = [arr[i]];
+        for (j = 0; j < arr.length; j++) {
+            if (i >= j) continue;
+            tempArr.push(arr[j]);
+            if (n == tempArr.length) {
+                arrNew.push(tempArr);
+                tempArr = [arr[i]];
+            }
+        }
+    }
+    return arrNew;
+}
+
+getSubset([1, 2, 3, 4, 5], 2);
