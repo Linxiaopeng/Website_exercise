@@ -242,23 +242,3 @@ function binoarySearch(array, i) {
     }
 }
 binoarySearch([13, 32, 19, 123, 56, 3327, 2, 6731], 50)
-
-function bino(arr, t) {
-    arr.sort(function (a, b) {
-        return a - b;
-    });
-    console.log(arr);
-    var m = Math.floor(arr.length / 2);
-    if (arr[m] === t) {
-        return m;
-    } else if (arr[m] < t) {
-        var arr = arr.slice(m + 1);
-        var res = bino(arr, t);
-        return m + 1 + res;
-    } else {// (arr[m] > t)
-        var arr1 = arr.slice(0, m);
-        return bino(arr1, t);
-    }
-}
-
-console.log(bino([13, 32, 19, 123, 56, 3327, 2, 6731], 56));
