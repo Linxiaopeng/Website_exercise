@@ -245,3 +245,15 @@ function binoarySearch(arr, t) {
 }
 
 binoarySearch([13, 32, 19, 123, 56, 3327, 2, 6731], 56);
+
+// 19. Write a JavaScript function that returns array elements larger than a number. 
+
+function returnNum(arr, t) {
+    arr.sort(function (a, b) { return a - b });
+    arr = arr.filter(function (word) {
+        return word > t;
+    });
+    return arr;
+}
+
+returnNum([13, 32, 19, 123, 56, 3327, 2, 6731], 100);
