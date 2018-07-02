@@ -257,3 +257,15 @@ function returnNum(arr, t) {
 }
 
 returnNum([13, 32, 19, 123, 56, 3327, 2, 6731], 100);
+
+// 20. Write a JavaScript function that generates a string id (specified length) of random characters. 
+
+function getRandom(n) {
+    text = "";
+    characterList = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for (i = 0; i < n; i++) {
+        text += characterList.charAt(Math.floor(Math.random() * characterList.length));
+    }
+    return text;
+}
+getRandom(13);
