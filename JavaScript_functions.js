@@ -321,3 +321,20 @@ function notRepeated(str) {
 
 notRepeated("Googeogel");
 
+// 24. Write a JavaScript function to apply Bubble Sort algorithm.
+
+function bubleSort(arr) {
+    arrNew = [];
+    for (i = 0; i < arr.length; i++) {
+        for (j = 0; j < arr.length; j++) {
+            if (arr[i] < arr[j]) {
+                arrNew = arr[i];
+                arr[i] = arr[j];
+                arr[j] = arrNew;
+            }
+        }
+    }
+    return arr;
+}
+
+bubleSort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]);
