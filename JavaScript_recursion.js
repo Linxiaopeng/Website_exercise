@@ -83,3 +83,6 @@ function checkEven(a) {
 
 checkEven(-92)
 
+// 8. Write a JavaScript program for binary search.
+
+// 9. Write a merge sort program in JavaScript.
