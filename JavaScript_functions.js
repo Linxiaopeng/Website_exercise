@@ -324,13 +324,13 @@ notRepeated("Googeogel");
 // 24. Write a JavaScript function to apply Bubble Sort algorithm.
 
 function bubleSort(arr) {
-    arrNew = [];
+    arrTemp = [];
     for (i = 0; i < arr.length; i++) {
         for (j = 0; j < arr.length; j++) {
             if (arr[i] < arr[j]) {
-                arrNew = arr[i];
+                arrTemp = arr[i];
                 arr[i] = arr[j];
-                arr[j] = arrNew;
+                arr[j] = arrTemp;
             }
         }
     }
