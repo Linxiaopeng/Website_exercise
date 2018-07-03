@@ -361,3 +361,29 @@ function longestCountry2(arr) {
 }
 
 longestCountry2(["Australia", "Germany", "United States of America"]);
+
+// 26. Write a JavaScript function to find longest substring in a given a string without repeating characters.
+
+function longestSubstring(str) {
+    longest = '';
+    strTemp = '';
+    for (i = 0; i < str.length; i++) {
+        for (j = 0; j < str.length; j ++) {
+            if (strTemp.indexOf(str[j]) !== -1) {
+                i = str.indexOf(str[j], i) + 1;
+                strTemp = '';
+            } else {
+                strTemp = str.slice(i, j + 1);
+                if (strTemp.length > longest.length) {
+                    longest = strTemp;
+                }
+            }
+        }
+    }
+    return longest;
+}
+
+longestSubstring("Google");
+
+// 27. Write a JavaScript function that returns the longest palindrome in a given string.
+
