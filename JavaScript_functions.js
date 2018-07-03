@@ -368,7 +368,7 @@ function longestSubstring(str) {
     longest = '';
     strTemp = '';
     for (i = 0; i < str.length; i++) {
-        for (j = 0; j < str.length; j ++) {
+        for (j = 0; j < str.length; j++) {
             if (strTemp.indexOf(str[j]) !== -1) {
                 i = str.indexOf(str[j], i) + 1;
                 strTemp = '';
@@ -387,3 +387,22 @@ longestSubstring("Google");
 
 // 27. Write a JavaScript function that returns the longest palindrome in a given string.
 
+// 28. Write a JavaScript program to pass a 'JavaScript function' as parameter.
+
+function exercise() {
+    console.log("Hello World!");
+}
+
+function sayHello(sayHelloCallback) {
+    sayHelloCallback();
+}
+
+sayHello(exercise);
+
+// 29. Write a JavaScript function to get the function name.
+
+function test() {
+    console.log(arguments.callee.name);
+}
+
+test();
