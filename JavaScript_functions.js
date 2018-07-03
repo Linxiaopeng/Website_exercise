@@ -305,3 +305,19 @@ function countNumOcc(str, t) {
 }
 
 countNumOcc("Google", "g")
+
+// 23. Write a JavaScript function to find the first not repeated character.
+
+function notRepeated(str) {
+    str = str.toLowerCase();
+    for (i = 0; i < str.length; i++) {
+        var strNew = str.charAt(i);
+        if (str.indexOf(strNew) == i && str.indexOf(strNew, i + 1) == -1) {
+            return strNew;
+        }
+    }
+    return null;
+}
+
+notRepeated("Googeogel");
+
