@@ -290,3 +290,18 @@ function getSubset(arr, n) {
 }
 
 getSubset([1, 2, 3, 4, 5], 2);
+
+// 22. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.
+
+function countNumOcc(str, t) {
+    str = str.toLowerCase().split('');
+    j = 0;
+    for (i = 0; i < str.length; i++) {
+        if (str[i] == t) {
+            j++
+        }
+    }
+    return j;
+}
+
+countNumOcc("Google", "g")
