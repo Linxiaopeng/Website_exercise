@@ -13,3 +13,16 @@ function calculateFactorial(n) {
 }
 
 calculateFactorial(5);
+
+// 2. Write a JavaScript program to find the greatest common divisor(gcd) of two positive numbers.
+
+function findGcd(a, b) {
+    while (b != 0) {
+        r = b;
+        b = a % b;
+        a = r;
+    }
+    return a;
+}
+
+findGcd(12, 144);
