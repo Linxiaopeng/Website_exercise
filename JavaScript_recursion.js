@@ -85,4 +85,17 @@ checkEven(-92)
 
 // 8. Write a JavaScript program for binary search.
 
+function binoarySearch(arr, t) {
+    arr.sort(function (a, b) { return a - b });
+    i = Math.floor(arr.length / 2);
+
+    if (arr.length <= 0 || t > arr[arr.length - 1]) return -1;
+    if (arr[i] === t) return i;
+    if (arr[i] < t) return i + 1 + binoarySearch(arr.slice(i + 1), t);
+    if (arr[i] > t) return binoarySearch(arr.slice(0, i), t);
+}
+
+binoarySearch([13, 32, 19, 123, 56, 3327, 2, 6731], 6731);
+
 // 9. Write a merge sort program in JavaScript.
+
