@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navibar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #323232;
+}
+
+.navibar li {
+    float: left;
+}
+
+.navibar li a {
+    display: block;
+    color: #FAFAFA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navibar li a:hover {
+    color: #B7B7B7;
+    text-decoration: none;
+}
+
+.navibar{
+    text-align:center;
+}
