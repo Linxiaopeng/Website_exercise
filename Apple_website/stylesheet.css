@@ -1,28 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-style: normal;
 }
 
-.navibar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #323232;
+.navibar {
+    text-align: center;
+    width: 100%;
+    background: #323232;
+    justify-content: space-between;
 }
 
 .navibar li {
-    float: left;
+    display: inline;
 }
 
 .navibar li a {
-    display: block;
     color: #FAFAFA;
     text-align: center;
-    padding: 14px 16px;
+    font-size: 14px;
+    line-height: 44px;
     text-decoration: none;
-    font-weight: 400;
+    padding: 40px;
 }
 
 .navibar li a:hover {
@@ -30,6 +30,3 @@
     text-decoration: none;
 }
 
-.navibar{
-    text-align:center;
-}
