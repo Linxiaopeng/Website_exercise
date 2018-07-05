@@ -5,6 +5,34 @@
     src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.svg#San Francisco Display Ultralight") format("svg")
 }
 
+@font-face {
+    font-family: "San Francisco Display Thin";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.svg#San Francisco Display Thin") format("svg")
+}
+
+@font-face {
+    font-family: "San Francisco Display Medium";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.svg#San Francisco Display Medium") format("svg")
+}
+
+@font-face {
+    font-family: "San Francisco Display Semibold";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.svg#San Francisco Display Semibold") format("svg")
+}
+
+@font-face {
+    font-family: "San Francisco Display Bold";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2) format("woff2"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff) format("woff"), url(https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.ttf) format("truetype"), url("fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.svg#San Francisco Display Bold") format("svg")
+}
+
 html,
 body {
     display: block;
@@ -50,9 +78,10 @@ a {
     padding: 0px 28px;
     display: block;
     color: #FAFAFA;
-    font-family: "San Francisco Display Ultralight";
+    font-family: "San Francisco Display Thin";
     line-height: 44px;
     letter-spacing: normal;
+    text-align: center;
 }
 
 #mainListItems li.menuItems a:hover {
@@ -62,20 +91,25 @@ a {
 #appleLogo {
     background: url(https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_small.svg) center no-repeat;
     background-size: contain;
-    height: 40px;
+    height: 44px;
     width: 40px;
     text-indent: -9999px;
     line-height: 44px;
     display: block;
+    padding: 0px;
+    align-self: center;
+    margin-left: 0.3em;
 }
 
 #search {
     background: url(https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/search/image_small.svg) center no-repeat;
     background-size: contain;
-    height: 36px;
-    width: 36px;
+    height: 44px;
+    width: 16px;
+    width: 100％;
     text-indent: -9999px;
     display: block;
+    margin-left: 1.1em;
 }
 
 #bag {
@@ -85,4 +119,5 @@ a {
     width: 34px;
     text-indent: -9999px;
     display: block;
+    margin-left: 0.5em;
 }
