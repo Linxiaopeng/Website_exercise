@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'SF Pro Text Regular';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_regular.woff2);
+}
+
+@font-face {
+    font-family: 'SF Pro Text Semibold';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_semibold.woff2;);
+}
+
+@font-face {
+    font-family: 'SF Pro Text Thin';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_thin.woff2;);
+}
+
+@font-face {
+    font-family: 'SF Pro Text Ultralight';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_ultralight.woff2;);
+}
+
+@font-face {
+    font-family: 'SF Pro Text Bold';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_bold.woff2;);
+}
+
+@font-face {
+    font-family: 'SF Pro Text Medium';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Text/v1/sf-pro-text_medium.woff2;);
+}
+
+@font-face{
+    font-family: 'SF Pro Icon';
+    font-style: normal;
+
+    src: url(https://www.apple.com/wss/fonts/SF-Pro-Icons/v1/SFProIcons_regular.woff;);
+}
