@@ -60,6 +60,7 @@ a {
 #appleLogo {
     line-height: 44px;
     display: block;
+    align-self: center;
     width: 40px;
     height: 44px;
     margin-left: .3em;
@@ -67,7 +68,6 @@ a {
     text-indent: -9999px;
     background: url(https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_small.svg) center no-repeat;
     background-size: contain;
-    align-self: center;
 }
 
 #search {
@@ -130,6 +130,9 @@ a {
 }
 
 #heroLink {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
     letter-spacing: -.02em;
 }
@@ -137,9 +140,7 @@ a {
 #heroLink-more a {
     font-size: 21px;
     font-weight: 400;
-    line-height: 1.38105;
-    float: left;
-    margin-left: 43.5%;
+    line-height: 44px;
     letter-spacing: .011em;
     color: #0070c9;
 }
@@ -152,8 +153,7 @@ a {
 #heroLink-buy a {
     font-size: 21px;
     font-weight: 400;
-    line-height: 1.38105;
-    float: left;
+    line-height: 44px;
     margin-left: 26px;
     letter-spacing: .011em;
     color: #0070c9;
@@ -164,12 +164,26 @@ a {
     color: #0070c9;
 }
 
-#heroLink:after {
-    display: block;
-    clear: both;
-    content: '';
+#heroPic {
+    width: auto;
+    max-width: 100%;
+    margin-top: 64px;
 }
 
-#heroPic {
-    margin-top: 64px;
+.right-arrow {
+    display: inline-block;
+    width: 14.73px;
+    height: 21px;
+    margin-top: 20px;
+}
+
+.right-arrow::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: ' ';
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    color: #0070c9;
+    border-width: 1.5px 1.5px 0 0;
+    border-style: solid;
 }
