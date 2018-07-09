@@ -1,6 +1,8 @@
 /*
 Eloquent JavaScript 3rd Edition
 Code Practice
+
+https://eloquentjavascript.net/code/
 */
 
 // Chapter 2: Program Structure
@@ -89,3 +91,13 @@ function countChar(str1, str2) {
 }
 
 console.log(countChar("BBC", "C"));
+
+// Chapter 4: Date Structures
+
+// 4.1 The sum of a range
+
+// 4.2 Reversing an array
+
+// 4.3 A list
+
+// 4.4 Deep comparison
