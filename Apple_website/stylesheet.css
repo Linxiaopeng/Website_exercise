@@ -187,3 +187,117 @@ a {
     border-width: 1.5px 1.5px 0 0;
     border-style: solid;
 }
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.container-iwatch {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 50%;
+    margin-right: 6px;
+    padding-top: 3.5em;
+    text-align: center;
+    background: #eee;
+}
+
+#subtitle-small-black {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.2381;
+    margin-top: 8px;
+    letter-spacing: .016em;
+}
+
+#link-small {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    letter-spacing: -.02em;
+}
+
+#link-more-small a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47059;
+    letter-spacing: -.022em;
+    color: #0070c9;
+}
+
+#link-more-small a:hover {
+    text-decoration: underline;
+    color: #0070c9;
+}
+
+#link-buy-small a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47059;
+    margin-left: 26px;
+    letter-spacing: -.022em;
+    color: #0070c9;
+}
+
+#link-buy-small a:hover {
+    text-decoration: underline;
+    color: #0070c9;
+}
+
+.right-arrow-small {
+    display: inline-block;
+    width: 14.73px;
+    height: 21px;
+    margin-top: 9px;
+}
+
+.right-arrow-small::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: ' ';
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    color: #0070c9;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+}
+
+#pic-iwatch {
+    width: auto;
+    max-width: 100%;
+    margin-top: 12px;
+}
+
+.container-howToShoot {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 50%;
+    margin-left: 6px;
+    padding-top: 3.5em;
+    text-align: center;
+    background: url(https://www.apple.com/v/home/dr/images/promos/how_to_shoot_large.jpg);
+}
+
+#title-small-white {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 52px;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+#subtitle-small-white {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2381;
+    margin-top: 4px;
+    letter-spacing: .016em;
+    color: #fff;
+}
