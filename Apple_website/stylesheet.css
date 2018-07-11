@@ -288,7 +288,19 @@ a {
 #pic-iwatch {
     width: auto;
     max-width: 100%;
-    margin-top: 12px;
+    margin-top: 24px;
+}
+
+#pic-airpod {
+    width: auto;
+    max-width: 100%;
+    margin-top: 32px;
+}
+
+#pic-homepod {
+    width: auto;
+    max-width: 100%;
+    margin-top: 24px;
 }
 
 .container-howToShoot {
