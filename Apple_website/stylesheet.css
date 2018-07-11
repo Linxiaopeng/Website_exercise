@@ -1,9 +1,9 @@
 html,
 body {
-    font-family: 'SF Pro Text Regular';
     display: block;
     margin: 0;
     padding: 0;
+    font-family: 'SF Pro Text Regular';
 }
 
 ul,
@@ -42,15 +42,15 @@ a {
 }
 
 #mainListItems li.menuItems a {
-    font-family: 'SF Pro Text Ultralight';
-    font-size: .9em;
-    font-weight: 100;
-    line-height: 44px;
     display: block;
     padding: 0 28px;
     text-align: center;
     letter-spacing: normal;
     color: #fafafa;
+    font-family: 'SF Pro Text Ultralight';
+    font-size: .9em;
+    font-weight: 100;
+    line-height: 44px;
 }
 
 #mainListItems li.menuItems a:hover {
@@ -58,7 +58,6 @@ a {
 }
 
 #appleLogo {
-    line-height: 44px;
     display: block;
     align-self: center;
     width: 40px;
@@ -68,6 +67,7 @@ a {
     text-indent: -9999px;
     background: url(https://www.apple.com/ac/globalnav/3/en_US/images/globalnav/apple/image_small.svg) center no-repeat;
     background-size: contain;
+    line-height: 44px;
 }
 
 #search {
@@ -112,21 +112,21 @@ a {
 }
 
 #heroTitle {
-    font-family: 'SF Pro Text Regular';
-    font-size: 52px;
-    font-weight: 600;
     letter-spacing: 1;
     letter-spacing: -.005em;
     color: #111;
+    font-family: 'SF Pro Text Regular';
+    font-size: 52px;
+    font-weight: 600;
 }
 
 #heroSubtitle {
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 1.14815;
     margin-top: 6px;
     letter-spacing: -.02em;
     color: #333;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.14815;
 }
 
 #heroLink {
@@ -138,11 +138,11 @@ a {
 }
 
 #heroLink-more a {
+    letter-spacing: .011em;
+    color: #0070c9;
     font-size: 21px;
     font-weight: 400;
     line-height: 44px;
-    letter-spacing: .011em;
-    color: #0070c9;
 }
 
 #heroLink-more a:hover {
@@ -151,12 +151,12 @@ a {
 }
 
 #heroLink-buy a {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 44px;
     margin-left: 26px;
     letter-spacing: .011em;
     color: #0070c9;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 44px;
 }
 
 #heroLink-buy a:hover {
@@ -191,28 +191,45 @@ a {
 .container {
     display: -webkit-flex;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 12px;
     margin-right: 12px;
     margin-left: 12px;
 }
 
+.container-listen {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+}
+
 .container-iwatch {
     -webkit-flex: 1;
     flex: 1;
     width: 50%;
+    height: 580px;
     margin-right: 6px;
     padding-top: 3.5em;
     text-align: center;
     background: #eee;
 }
 
+.container-mac-subtitle {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #subtitle-small-black {
+    margin-top: 8px;
+    letter-spacing: .016em;
     font-size: 19px;
     font-weight: 400;
     line-height: 1.2381;
-    margin-top: 8px;
-    letter-spacing: .016em;
 }
 
 #link-small {
@@ -224,11 +241,11 @@ a {
 }
 
 #link-more-small a {
+    letter-spacing: -.022em;
+    color: #0070c9;
     font-size: 17px;
     font-weight: 400;
     line-height: 1.47059;
-    letter-spacing: -.022em;
-    color: #0070c9;
 }
 
 #link-more-small a:hover {
@@ -237,12 +254,12 @@ a {
 }
 
 #link-buy-small a {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 1.47059;
     margin-left: 26px;
     letter-spacing: -.022em;
     color: #0070c9;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47059;
 }
 
 #link-buy-small a:hover {
@@ -278,26 +295,149 @@ a {
     -webkit-flex: 1;
     flex: 1;
     width: 50%;
+    height: 580px;
     margin-left: 6px;
     padding-top: 3.5em;
     text-align: center;
     background: url(https://www.apple.com/v/home/dr/images/promos/how_to_shoot_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-music {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 50%;
+    height: 580px;
+    margin-right: 6px;
+    padding-top: 3.5em;
+    text-align: center;
+    background: url(https://www.apple.com/v/home/dr/images/promos/drake_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-mac {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 50%;
+    height: 580px;
+    margin-left: 6px;
+    padding-top: 3.5em;
+    text-align: center;
+    background: url(https://www.apple.com/v/home/dr/images/promos/behind_the_mac_large.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container-airpod {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 50%;
+    height: 580px;
+    margin-right: 6px;
+    padding-top: 3.5em;
+    text-align: center;
+    background: #FAFAFA;
+}
+
+.container-homepod {
+    -webkit-flex: 1;
+    flex: 1;
+    width: 50%;
+    height: 580px;
+    margin-left: 6px;
+    padding-top: 3.5em;
+    text-align: center;
+    background: #FAFAFA;
 }
 
 #title-small-white {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 1.1;
     margin-top: 52px;
     letter-spacing: 0;
     color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+#title-small-black {
+    margin-top: 52px;
+    letter-spacing: 0;
+    color: #111;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
 }
 
 #subtitle-small-white {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 1.2381;
     margin-top: 4px;
     letter-spacing: .016em;
     color: #fff;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2381;
+}
+
+#music-singer {
+    margin-top: 8px;
+    letter-spacing: .016em;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.2381;
+}
+
+.musicLogo {
+    margin-top: 8px;
+    margin-left: 8px;
+    letter-spacing: .016em;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.2381;
+}
+
+#link-watch-small-white a {
+    letter-spacing: -.022em;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47059;
+}
+
+#link-watch-small-white a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+#link-explore-small-white a {
+    margin-left: 26px;
+    letter-spacing: -.022em;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.47059;
+}
+
+#link-explore-small-white a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.right-arrow-small-white {
+    display: inline-block;
+    width: 14.73px;
+    height: 21px;
+    margin-top: 9px;
+}
+
+.right-arrow-small-white::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    content: ' ';
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    color: #fff;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
 }
