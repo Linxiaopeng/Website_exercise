@@ -1,8 +1,14 @@
 * {
-    font-family: 'Circular Std Book';
+    font-family: 'spotify-circular';
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: 0;
 }
+
+/* Container */
 
 .top-container {
     display: -webkit-flex;
@@ -46,8 +52,122 @@
     background-color: #111;
 }
 
+/* Side Navigation Bar */
+
+.nav-bar {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 24px;
+    padding-bottom: 95px;
+}
+
+/* Side Navigation Bar Header */
+
+.nav-bar-header {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.logo svg {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Side Navigation Bar Group */
+
+.nav-bar-group {
+    font-family: 'spotify-circular', 'Microsoft Yahei';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-top: 18px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    letter-spacing: .015em;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.nav-bar-group:hover {
+    color: #fff;
+}
+
+.nav-bar-group:active {
+    color: #1db954;
+}
+
+.nav-bar-group-item {
+    padding-left: 36px;
+}
+
+.nav-bar-group-icon svg {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    fill: hsla(0, 0%, 100%, .6);
+}
+
+/* Side Navigation Bar Recently Played */
+
+.nav-bar-recent {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.nav-bar-recent-header {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 16px;
+    padding-top: 12px;
+    letter-spacing: .015em;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.nav-bar-recent-menu {
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+
+.nav-bar-recent-name {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+    cursor: pointer;
+    letter-spacing: .015em;
+    text-transform: none;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.nav-bar-recent-name:hover {
+    color: #fff;
+}
+
+.nav-bar-recent-type {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 16px;
+    display: block;
+    padding-top: 1px;
+    letter-spacing: .015em;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+/*Text*/
+
 .h1 {
-    font-family: 'Circular Std Black', 'Microsoft Yahei';
+    font-family: 'spotify-circular';
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
