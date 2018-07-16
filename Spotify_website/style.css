@@ -138,9 +138,12 @@
 }
 
 .nav-bar-recent-name {
+    overflow: hidden;
     cursor: pointer;
+    white-space: nowrap;
     letter-spacing: .015em;
     text-transform: none;
+    text-overflow: ellipsis;
     color: hsla(0, 0%, 100%, .6);
     font-size: 14px;
     font-weight: 200;
@@ -168,6 +171,9 @@
 .nav-bar-download {
     position: absolute;
     bottom: 154px;
+    cursor: pointer;
+    color: hsla(0, 0%, 100%, .6);
+    fill: hsla(0, 0%, 100%, .6);
 }
 
 .nav-bar-download-icon svg {
@@ -176,16 +182,19 @@
     left: 0;
     width: 20px;
     height: 20px;
-    fill: hsla(0, 0%, 100%, .6);
 }
 
 .nav-bar-download-item {
     padding-left: 36px;
     letter-spacing: .015em;
-    color: hsla(0, 0%, 100%, .6);
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+}
+
+.nav-bar-download:hover {
+    color: #fff;
+    fill: #fff;
 }
 
 /* Side Navigation Bar Info */
@@ -197,13 +206,34 @@
     border-top: 1px solid #404040;
 }
 
-.nav-bar-info-avatar {
-    width: 28px;
-    height: 28px;
-    background-color: aliceblue;
+.nav-bar-info {
+    position: absolute;
+    bottom: 108px;
+    cursor: pointer;
 }
 
-.nav-bar-info-name {}
+.nav-bar-info-avatar {
+    position: relative;
+    top: 26px;
+    left: 4px;
+}
+
+.nav-bar-info-avatar-pic {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    background-image: url(https://i.scdn.co/image/bdaeccb035a8af87b7a70b62217ff5c633ba6c7c);
+    background-size: cover;
+}
+
+.nav-bar-info-name {
+    padding-left: 42px;
+    letter-spacing: .015em;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
 
 /*Text*/
 
