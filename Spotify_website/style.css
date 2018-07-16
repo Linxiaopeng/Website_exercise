@@ -1,11 +1,11 @@
 * {
+    font-family: 'spotify-circular';
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     border: 0;
-    font-family: 'spotify-circular';
 }
 
 /* Container */
@@ -25,7 +25,7 @@
     -webkit-flex: 1;
     flex: 1;
     width: 100%;
-    height: 91px;
+    height: 90px;
     background-color: #282828;
 }
 
@@ -83,17 +83,20 @@
 /* Side Navigation Bar Group */
 
 .nav-bar-group {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
     padding-top: 18px;
     padding-bottom: 8px;
     cursor: pointer;
     letter-spacing: .015em;
     color: hsla(0, 0%, 100%, .6);
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 22px;
 }
 
 .nav-bar-group:hover {
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: color;
     color: #fff;
 }
 
@@ -114,22 +117,27 @@
     fill: hsla(0, 0%, 100%, .6);
 }
 
+.nav-bar-group:nth-child(2) {
+    color: #1db954;
+}
+
 /* Side Navigation Bar Recently Played */
 
 .nav-bar-recent {
+    overflow: hidden;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .nav-bar-recent-header {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 16px;
     padding-top: 12px;
     letter-spacing: .015em;
     letter-spacing: .16em;
     text-transform: uppercase;
     color: hsla(0, 0%, 100%, .6);
-    font-size: 11px;
-    font-weight: 200;
-    line-height: 16px;
 }
 
 .nav-bar-recent-menu {
@@ -138,6 +146,9 @@
 }
 
 .nav-bar-recent-name {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
     overflow: hidden;
     cursor: pointer;
     white-space: nowrap;
@@ -145,25 +156,25 @@
     text-transform: none;
     text-overflow: ellipsis;
     color: hsla(0, 0%, 100%, .6);
-    font-size: 14px;
-    font-weight: 200;
-    line-height: 20px;
 }
 
 .nav-bar-recent-name:hover {
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: color;
     color: #fff;
 }
 
 .nav-bar-recent-type {
+    font-size: 11px;
+    font-weight: 200;
+    line-height: 16px;
     display: block;
     padding-top: 1px;
     letter-spacing: .015em;
     letter-spacing: .16em;
     text-transform: uppercase;
     color: hsla(0, 0%, 100%, .6);
-    font-size: 11px;
-    font-weight: 200;
-    line-height: 16px;
 }
 
 /* Side Navigation Bar Download */
@@ -185,14 +196,17 @@
 }
 
 .nav-bar-download-item {
-    padding-left: 36px;
-    letter-spacing: .015em;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+    padding-left: 36px;
+    letter-spacing: .015em;
 }
 
 .nav-bar-download:hover {
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: color;
     color: #fff;
     fill: #fff;
 }
@@ -227,20 +241,117 @@
 }
 
 .nav-bar-info-name {
-    padding-left: 42px;
-    letter-spacing: .015em;
-    color: #fff;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    padding-left: 42px;
+    letter-spacing: .015em;
+    color: #fff;
+}
+
+/* Mainview */
+
+.contentspacing {
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.mainview-nav {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.mainview-nav-menu {
+    text-align: center;
+}
+
+.mainview-nav-group {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    position: relative;
+    display: inline-block;
+    margin: .8em;
+    padding: .8em .68em 0;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    transition-property: color;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, .6);
+    border: 0;
+}
+
+.mainview-nav-group:hover {
+    color: #fff;
+}
+
+.mainview-nav-menu li:nth-child(1) {
+    color: #fff;
+}
+
+.mainview-nav-menu li:nth-child(1):after {
+    position: relative;
+    top: 4px;
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    content: '';
+    background-color: #1db954;
+}
+
+/* Mainview Fluid */
+
+.mainview-fluid-container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+.mainview-fluid-coloum {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainview-fluid-cover {
+    width: 156.16px;
+}
+
+.mainview-fluid-name {
+    color: #fff;
+    margin: 12px 0 4px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 /*Text*/
 
 .h1 {
-    text-align: center;
-    color: #fff;
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
+    margin: 24px 0;
+    text-align: center;
+    letter-spacing: -.005em;
+    text-transform: none;
+    color: #fff;
+}
+
+/* 1366×645 */
+
+@media only screen and (max-height: 645px) {
+    .nav-bar-recent-menu-size li:nth-last-child(-n+2) {
+        display: none;
+    }
 }
