@@ -34,21 +34,17 @@
     top: 0;
     left: 0;
     overflow: auto;
-    -webkit-flex: 1;
-    flex: 1;
     width: 220px;
     height: 100vh;
     min-height: 0 !important;
-    background-color: #080808;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .mainview-container {
-    -webkit-flex: 1;
-    flex: 1;
     width: 100%;
     height: 2618px;
     min-height: 0 !important;
-    margin-left: 220px;
+    padding-left: 220px;
     background-color: #111;
 }
 
@@ -251,11 +247,23 @@
 
 /* Mainview */
 
+.mainview-background-color {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(65, 68, 88), rgb(6, 7, 9) 85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
+}
+
 .contentspacing {
+    font-size: 14px;
     max-width: 1480px;
     margin: 0 auto;
     padding: 0 2em;
-    font-size: 14px;
 }
 
 .mainview-nav {
@@ -315,8 +323,8 @@
 }
 
 .container-fluid {
-    padding: 0 8px;
-    margin: 0 auto;
+    margin-right: -8px;
+    margin-left: -8px;
 }
 
 .container-fluid-noSpaceAround {
@@ -324,30 +332,44 @@
 }
 
 .mainview-fluid-coloum {
-    padding: 0 8px;
     position: relative;
-    min-height: 1px;
     float: left;
     width: calc(100%/6);
+    min-height: 1px;
+    padding: 0 8px;
 }
 
 .mainview-fluid-cover {
+    width: 100%;
+    cursor: pointer;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 .mainview-fluid-name {
-    color: #fff;
-    margin: 12px 0 4px;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
     display: block;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    overflow: hidden;
     -webkit-box-orient: vertical;
+    width: 100%;
+    max-height: 560px;
+    margin: 12px 0 4px;
+    padding-bottom: 2.5em;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .015em;
+    text-transform: none;
+    text-overflow: ellipsis;
+    color: #fff;
+    -webkit-line-clamp: 2;
+}
+
+.mainview-viewmore {
+    padding-bottom: 25px;
 }
 
 /*Text*/
@@ -356,6 +378,7 @@
     font-size: 36px;
     font-weight: 600;
     line-height: 44px;
+    position: relative;
     margin: 24px 0;
     text-align: center;
     letter-spacing: -.005em;
