@@ -255,6 +255,7 @@
     max-width: 1480px;
     margin: 0 auto;
     padding: 0 2em;
+    font-size: 14px;
 }
 
 .mainview-nav {
@@ -308,18 +309,32 @@
 .mainview-fluid-container {
     display: -webkit-flex;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container-fluid {
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+.container-fluid-noSpaceAround {
+    padding: 0;
 }
 
 .mainview-fluid-coloum {
-    padding-left: 8px;
-    padding-right: 8px;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: column;
+    padding: 0 8px;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    width: calc(100%/6);
 }
 
 .mainview-fluid-cover {
-    width: 156.16px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 
 .mainview-fluid-name {
