@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    cursor: default;
     text-decoration: none;
     border: 0;
 }
@@ -537,6 +538,11 @@
     color: #fff;
 }
 
+.spoticon-add-16:before {
+    font-size: 16px;
+    content: '\F138';
+}
+
 /* Nowplaying Bar Center */
 
 .nowplaying-bar-control {
@@ -571,6 +577,10 @@
     background-color: transparent;
 }
 
+.control-button:hover {
+    color: #fff;
+}
+
 .spoticon-shuffle-16:before {
     font-family: glue1-spoticon;
     font-size: 16px;
@@ -597,6 +607,16 @@
     content: '';
     border: 1px solid hsla(0, 0%, 100%, .6);
     border-radius: 500px;
+}
+
+.control-button--circle:hover:after {
+    border-color: #fff;
+}
+
+.control-button--circle:hover {
+    transition: none 33ms cubic-bezier(.3, 0, 0, 1);
+    transition-property: all;
+    transform: scale(1.06);
 }
 
 .spoticon-skipforward-16:before {
@@ -691,6 +711,13 @@
     background-color: #b3b3b3;
 }
 
+.nowplaying-bar-playback-bar--progress-bar:hover .progress-bar-fg {
+    transition-timing-function: cubic-bezier(.3, 0, 0, 1);
+    transition-duration: .1s;
+    transition-property: background-color;
+    background-color: #1db954;
+}
+
 .progress-bar-slider {
     z-index: 100;
     width: 12px;
@@ -704,6 +731,59 @@
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+.nowplaying-bar-playback-bar--progress-bar:hover .progress-bar-slider {
+    transition-timing-function: cubic-bezier(.3, 0, 0, 1);
+    transition-duration: .1s;
+    transition-property: transform;
+    transform: scale(1);
+}
+
+.nowplaying-bar-right-inner {
+    width: 180px;
+}
+
+.nowplaying-bar-right-extra-controls {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.extra-controls-queueLink {
+    position: relative;
+    display: inline-block;
+    border: 0;
+}
+
+.spoticon-queue-16:before {
+    font-size: 16px;
+    content: '\F13A';
+}
+
+.extra-controls-connectDcvice {
+    position: relative;
+}
+
+.spoticon-devices-16:before {
+    font-size: 16px;
+    content: '\F213';
+}
+
+.extra-controls-volumBar {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    width: 136px;
+}
+
+.spoticon-volume-16:before {
+    font-size: 16px;
+    content: '\F15E';
 }
 
 /* 1366×645 */
