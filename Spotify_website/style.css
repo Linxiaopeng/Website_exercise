@@ -414,6 +414,14 @@
 /* Nowplaying Bar */
 
 .nowplaying-bar {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     height: 90px;
     padding: 0 16px;
 }
@@ -421,7 +429,6 @@
 .nowplaying-bar-left {
     width: 30%;
     min-width: 180px;
-    margin-top: 17px;
 }
 
 .nowplaying-bar-center {
@@ -439,6 +446,8 @@
     width: 30%;
     min-width: 180px;
 }
+
+/* Nowplaying Bar Left */
 
 .nowplaying {
     display: -ms-flexbox;
@@ -526,6 +535,175 @@
     transition-duration: .2s;
     transition-property: color;
     color: #fff;
+}
+
+/* Nowplaying Bar Center */
+
+.nowplaying-bar-control {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.nowplaying-bar-control-buttons {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 224px;
+    margin-bottom: 12px;
+}
+
+.control-button {
+    position: relative;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    color: hsla(0, 0%, 100%, .6);
+    border: none;
+    background-color: transparent;
+}
+
+.spoticon-shuffle-16:before {
+    font-family: glue1-spoticon;
+    font-size: 16px;
+    content: '\F144';
+}
+
+.spoticon-skipback-16:before {
+    font-family: glue1-spoticon;
+    font-size: 16px;
+    content: '\F146';
+}
+
+.spoticon-pause-16:before {
+    font-size: 16px;
+    content: '\F130';
+}
+
+.control-button--circle:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    border: 1px solid hsla(0, 0%, 100%, .6);
+    border-radius: 500px;
+}
+
+.spoticon-skipforward-16:before {
+    font-size: 16px;
+    content: '\F148';
+}
+
+.spoticon-repeat-16:before {
+    font-size: 16px;
+    content: '\F13E';
+}
+
+[class*=' spoticon-']:before,
+[class^=spoticon-]:before {
+    font-family: glue1-spoticon;
+    font-weight: 400;
+    font-style: normal;
+    line-height: inherit;
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.control-button--active {
+    color: #1db954;
+}
+
+.control-button--active-dot:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 4px;
+    height: 4px;
+    content: '';
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #1db954;
+}
+
+.nowplaying-bar-playback-bar {
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -ms-flex-align: center;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nowplaying-bar-playback-bar--progress-time {
+    font-size: 11px;
+    line-height: 16px;
+    min-width: 40px;
+    text-align: center;
+    letter-spacing: .015em;
+    color: hsla(0, 0%, 100%, .6);
+}
+
+.nowplaying-bar-playback-bar--progress-bar {
+    position: relative;
+    width: 100%;
+    height: 12px;
+}
+
+.progress-bar-middle-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.progress-bar-bg {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404040;
+}
+
+.progress-bar-fg {
+    width: 0;
+    height: 4px;
+    transition-timing-function: cubic-bezier(1, 0, .7, 1);
+    transition-duration: .1s;
+    transition-property: background-color;
+    border-radius: 2px;
+    background-color: #b3b3b3;
+}
+
+.progress-bar-slider {
+    z-index: 100;
+    width: 12px;
+    height: 12px;
+    margin-top: -6px;
+    margin-left: -6px;
+    transition-timing-function: cubic-bezier(1, 0, .7, 1);
+    transition-duration: .1s;
+    transition-property: transform;
+    transform: scale(0);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
 }
 
 /* 1366×645 */
